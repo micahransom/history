@@ -1,9 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>Example</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AI Haiku Generator</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <p>This is an example of a simple HTML page with one paragraph.</p>
+        <header>
+            <h1>AI Haiku Generator</h1>
+            <p>Generate beautiful haikus using the power of AI</p>
+        </header>
+        
+        <main>
+            <section class="intro">
+                <p>This is a simple web page that demonstrates the integration of OpenAI's API to generate haikus.</p>
+            </section>
+            
+            <section class="haiku-container">
+                <h2>Generate Your Haiku</h2>
+                <div class="input-container">
+                    <label for="topic-input">Haiku Topic:</label>
+                    <input type="text" id="topic-input" class="topic-input" placeholder="Enter a topic (e.g. nature, technology, love)" />
+                </div>
+                <button id="generate-haiku">Generate AI Haiku</button>
+                <div id="haiku-display">Your haiku will appear here...</div>
+            </section>
+        </main>
+        
+        <footer>
+            <p>&copy; 2023 AI Haiku Generator</p>
+        </footer>
+        
+        <script src="script.js"></script>
     </body>
 </html>
